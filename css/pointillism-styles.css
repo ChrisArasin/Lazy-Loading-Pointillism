@@ -1,0 +1,58 @@
+.gallery-item {
+  margin: 60px auto 90px;
+  max-width: 900px;
+}
+.img-wrap {
+  margin: 0 auto 20px;
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+.img-wrap img {
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top:0;
+  left:0;
+  opacity: 0;
+  margin: 0;
+}
+.img-wrap img.on {
+  opacity: 1;
+  transition: all .5s;
+}
+.caption-wrap {
+  max-width: 600px;
+  margin: 0 auto 32px;
+}
+h2 {
+font-size: 24px;
+font-weight: 500;
+letter-spacing: -.025em;
+margin: 0 0 5px;
+color: #eaeaea;
+}
+.gallery-item p {
+ font-size: 16px;
+ line-height: 1.4;
+ color: #d2d2d2;
+ font-weight: 400;
+ margin: 0;
+}
+
+.dot-grid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  z-index: 1;
+  perspective: 800px;
+}
+.dot {
+ position: absolute;
+ border-radius: 50px;
+ transition: all .5s;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo 3: Lazy Load Pointilism</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/804456/6513172/css/fonts.css" />
+
+    <link rel="stylesheet" type="text/css" href="../../public/bundle.css">
+    <link rel="stylesheet" type="text/css" href="../css/pointillism-styles.css">
+    <link rel="stylesheet" type="text/css" href="css/demo-3.css">
+  </head>
+  <body>
+    <div class="container header" id="page-header">
+      <div class="txt-column">
+        <div class="logo">
+          <span id="head-label">A Code Demo by</span>
+          <a href="../" class="name">Chris Arasin</a>
+        </div>
+        <p class="article-link">From the article: <a href="../">Lazy Loading Pointillism</a></p>
+      </div>
+    </div>
+
+    <div id="wrap">
+      <section id="content">
+        <div class="container dark">
+          <div class="column">
+            <div class="demo-buttons">
+              <p><a href='../demo-1/' >Demo 1</a> <a href='../demo-2/'>Demo 2</a> <a href='../demo-3/' class="here">Demo 3</a></p>
+            </div>
+            <h1>Lazy Load Demo #3</h1>
+            <p>A little ridiculous... but fun! Staggered transition enterance, but starting the dots from way off the screen.</p>
+
+            <div class="gallery-item">
+              <div class="caption-wrap">
+                <h2>Gray weather, Grande Jatte</h2>
+                <p>Georges Seurat, 1888. Philadelphia Museum of Art</p>
+              </div>
+              <div class="img-wrap load-wrapper"  style="padding-bottom: 82.1111%">
+                <img class="toload" src="../img/gray-weather-thumb.jpg" data-src="../img/gray-weather.jpg" data-width="900" data-height="739" >
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="caption-wrap">
+                <h2>Bathers at Asnières</h2>
+                <p>Georges Seurat, 1884. National Gallery, London</p>
+              </div>
+              <div class="img-wrap load-wrapper" style="padding-bottom: 66.333%">
+                <img class="toload" src="../img/bathers-at-asnieres-thumb.jpg" data-src="../img/bathers-at-asnieres.jpg" data-width="900" data-height="597" >
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="caption-wrap">
+                <h2>Circus Sideshow</h2>
+                <p>Georges Seurat, 1887-88.  Metropolitan Museum of Art, New York</p>
+              </div>
+              <div class="img-wrap load-wrapper" style="padding-bottom: 66.8889%">
+                <img class="toload" src="../img/circus-sideshow-thumb.jpg" data-src="../img/circus-sideshow.jpg" data-width="900" data-height="602" >
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="caption-wrap">
+                <h2>The Seine and la Grande Jatte - Springtime</h2>
+                <p>Georges Seurat, 1888.  Royal Museum of Fine Arts of Belgium</p>
+              </div>
+              <div class="img-wrap load-wrapper" style="padding-bottom: 77.777%">
+                <img class="toload" src="../img/seine-grande-jatte-springtime-thumb.jpg" data-src="../img/seine-grande-jatte-springtime.jpg" data-width="900" data-height="700" >
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="caption-wrap">
+                <h2>Study for A Sunday Afternoon on the Island of La Grande Jatte</h2>
+                <p>Georges Seurat, 1884–85. Metropolitan Museum of Art, New York</p>
+              </div>
+              <div class="img-wrap load-wrapper" style="padding-bottom: 67.2222%">
+                <img class="toload" src="../img/sunday-on-la-grande-jatte-thumb.jpg" data-src="../img/sunday-on-la-grande-jatte.jpg" data-width="900" data-height="605" >
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../../public/scripts.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

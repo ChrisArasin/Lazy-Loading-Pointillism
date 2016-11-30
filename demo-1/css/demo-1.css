@@ -1,0 +1,5 @@
+.dot {
+ position: absolute;
+ border-radius: 50px;
+ transition: all .5s;
+}
