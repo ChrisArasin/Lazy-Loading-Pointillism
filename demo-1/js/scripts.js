@@ -74,7 +74,7 @@ LazyDotImage.prototype.drawDots  = function(dotSize, margin) {
     for (var j = 0; j < dotsAcross; j++) {
       var x = j * increment;
       var y = i * increment;
-      var data = context.getImageData(x, y, 1, 1);
+      var data = this.context.getImageData(x, y, 1, 1);
       var r = data.data[0];
       var g = data.data[1];
       var b = data.data[2];
@@ -94,15 +94,8 @@ LazyDotImage.prototype.drawDots  = function(dotSize, margin) {
   });
 }
 
-LazyDotImage.prototype.prepDots = function(dotSize, margin) {
-  //draw dots after thumb load
-  var $downloadingImage = $("<img>");
-  var self = this;
-  $downloadingImage.on('load', function(){
-    self.drawDots(dotSize, margin);
-  });
-  $downloadingImage.attr("src", this.$thumbImg.attr('src'));
-}
+
+$(window).on('load', function(){
 
   var lazyDotImages = [];
   var $imgLoadWrappers = $('.load-wrapper');
@@ -111,7 +104,7 @@ LazyDotImage.prototype.prepDots = function(dotSize, margin) {
 
   $imgLoadWrappers.each(function(){
     var newImg = new LazyDotImage($(this), canvas, context);
-    newImg.prepDots(18, 2);
+    newImg.drawDots(18, 2);
     lazyDotImages.push( newImg );
   });
 
@@ -127,8 +120,9 @@ LazyDotImage.prototype.prepDots = function(dotSize, margin) {
       d.checkLoad(scrollTop, height);
     });
   }
-  $(document).ready(checkAllImages);
+  checkAllImages();
   $(window).scroll(checkAllImages);
   $(window).resize(setAllSizes);
+});
 
 })(jQuery);
