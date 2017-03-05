@@ -23,7 +23,7 @@
         <div class="container dark">
           <div class="column">
             <div class="demo-buttons">
-              <p><a href='../demo-1/' >Demo 1</a> <a href='../demo-2/' class="here">Demo 2</a> <a href='../demo-3/'>Demo 3</a></p>
+              <p><a href="../demo-1/" >Demo 1</a> <a class="here" href="../demo-2/">Demo 2</a> <a href="../demo-3/" >Demo 3</a></p>
             </div>
             <h1>Lazy Load Demo #2</h1>
             <p>Randomly reveal the dots when the image enters the viewport with a CSS 3D transition. This version uses a bigger dot size because animating too many items at once can cause the browser to stutter.</p>
@@ -33,7 +33,7 @@
                 <h2>Gray weather, Grande Jatte</h2>
                 <p>Georges Seurat, 1888. Philadelphia Museum of Art</p>
               </div>
-              <div class="img-wrap load-wrapper"  style="padding-bottom: 82.1111%">
+              <div class="lazydot"  style="padding-bottom: 82.1111%">
                 <img class="toload" src="../img/gray-weather-thumb.jpg" data-src="../img/gray-weather.jpg" data-width="900" data-height="739" >
               </div>
             </div>
@@ -42,7 +42,7 @@
                 <h2>Bathers at Asnières</h2>
                 <p>Georges Seurat, 1884. National Gallery, London</p>
               </div>
-              <div class="img-wrap load-wrapper" style="padding-bottom: 66.333%">
+              <div class="lazydot" style="padding-bottom: 66.333%">
                 <img class="toload" src="../img/bathers-at-asnieres-thumb.jpg" data-src="../img/bathers-at-asnieres.jpg" data-width="900" data-height="597" >
               </div>
             </div>
@@ -51,7 +51,7 @@
                 <h2>Circus Sideshow</h2>
                 <p>Georges Seurat, 1887-88.  Metropolitan Museum of Art, New York</p>
               </div>
-              <div class="img-wrap load-wrapper" style="padding-bottom: 66.8889%">
+              <div class="lazydot" style="padding-bottom: 66.8889%">
                 <img class="toload" src="../img/circus-sideshow-thumb.jpg" data-src="../img/circus-sideshow.jpg" data-width="900" data-height="602" >
               </div>
             </div>
@@ -60,7 +60,7 @@
                 <h2>The Seine and la Grande Jatte - Springtime</h2>
                 <p>Georges Seurat, 1888.  Royal Museum of Fine Arts of Belgium</p>
               </div>
-              <div class="img-wrap load-wrapper" style="padding-bottom: 77.777%">
+              <div class="lazydot" style="padding-bottom: 77.777%">
                 <img class="toload" src="../img/seine-grande-jatte-springtime-thumb.jpg" data-src="../img/seine-grande-jatte-springtime.jpg" data-width="900" data-height="700" >
               </div>
             </div>
@@ -69,7 +69,7 @@
                 <h2>Study for A Sunday Afternoon on the Island of La Grande Jatte</h2>
                 <p>Georges Seurat, 1884–85. Metropolitan Museum of Art, New York</p>
               </div>
-              <div class="img-wrap load-wrapper" style="padding-bottom: 67.2222%">
+              <div class="lazydot" style="padding-bottom: 67.2222%">
                 <img class="toload" src="../img/sunday-on-la-grande-jatte-thumb.jpg" data-src="../img/sunday-on-la-grande-jatte.jpg" data-width="900" data-height="605" >
               </div>
             </div>
@@ -79,6 +79,7 @@
       </section>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../jquery.lazydot.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
